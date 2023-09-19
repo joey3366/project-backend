@@ -1,0 +1,8 @@
+import Route from '@ioc:Adonis/Core/Route';
+
+Route.group(() => {
+    //
+})
+.namespace("App/Modules/{{model}}/Controllers")
+.prefix('/{{modelMin}}').as('{{model}}')
+.middleware(['auth'])

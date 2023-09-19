@@ -1,0 +1,12 @@
+import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+
+export default class {{name}} {
+    //
+    public async index({ response }: HttpContextContract) {
+      try {
+        console.log('Hello world')
+      } catch (error) {
+      return response.status(403).json({ message: error.message })
+      }
+    }
+}

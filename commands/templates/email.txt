@@ -1,0 +1,6 @@
+export default class ExampleEmail {
+  public static async send(name: string, email: string) {
+    // Lógica para enviar el correo electrónico de bienvenida
+    // Puedes utilizar bibliotecas o servicios de correo electrónico, como Nodemailer o SendGrid, para enviar el correo electrónico aquí
+  }
+}

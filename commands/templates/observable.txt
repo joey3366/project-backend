@@ -1,0 +1,11 @@
+import type { ObserverContract } from '@ioc:Adonis/Addons/LucidObserver'
+import { v4 as uuidv4 } from 'uuid';
+
+import {{ model }} from 'App/Models/{{ model }}'
+
+export default class {{ observer }} implements ObserverContract {
+
+  public async beforeCreate({{ modellower }}: {{ model }}): Promise<void> {
+    {{ modellower }}.uuid = uuidv4()
+  }
+}
